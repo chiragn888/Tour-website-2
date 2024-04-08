@@ -18,5 +18,9 @@ function handleLogin(event) {
         alert('Incorrect login details');
     }
 }
+const loginForm = document.querySelector('#login-form');
+if (loginForm) {
+    loginForm.addEventListener('submit', handleLogin);
+}
 
 // Call handleLogin function when the form is submitted
