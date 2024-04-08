@@ -94,43 +94,35 @@ nav{
     transform: translateX(10px);
 }
 
-/* >>>>>>>>>> Login Form Changes <<<<<<<<<< */
+/* >>>>>>>>>>>>> L O G I N <<<<<<<<<<<<<<<  */
 
-.login-form {
+.login{
+    margin-top: 20px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 15px;
+    flex-direction: column;
 }
 
-.input-field {
-    width: 100%;
+.input-field{
+    margin-bottom: 20px;
+}
+
+.input-field input{
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
     border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
 }
 
-.btn-login {
-    border: none;
-    outline: none;
-    padding: 10px 12px;
-    font-size: 17px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 600;
-    cursor: pointer;
-    color: #001721;
-    background-color: transparent;
-    border: 1px solid transparent;
-    transition: all 0.14s linear;
+.btn-primary{
+    background-color: #4CAF50;
+    color: white;
 }
 
-.btn-login:hover {
-    background-color: transparent;
-    color: #fff;
-    border: 1px solid #fff;
-    font-weight: 500;
+.btn-primary:hover{
+    background-color: #45a049;
 }
 
 /* >>>>>>>>>>>>> M A I N <<<<<<<<<<<<<<<  */
@@ -168,4 +160,129 @@ main{
     max-width: 450px;
 }
 
-/* ...Remaining code for footer styling and media queries... */
+.btn{
+    border: none;
+    outline: none;
+    padding: 10px 12px;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #001721;
+    border: 1px solid transparent;
+    transition: all 0.14s linear;
+}
+
+
+.btn:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    font-weight: 500;
+}
+
+
+/* >>>>>>>>>>>>> F O O T E R  <<<<<<<<<<<<<<<  */
+
+footer{
+    gap: 10px 0px;
+    height: 10vh;
+}
+
+.social-link{
+    gap: 0px 25px;
+}
+.social-link a i{
+    color: #fff;
+    font-size: 25px;
+    transition: all 0.2s linear;
+}
+
+.social-link a i:hover{
+    transform: translateY(-7px);
+}
+
+.dev-info a{
+    color: #fff;
+}
+
+
+
+
+/* >>>>>>>>>>>>> M E D I A  <<<<<<<<<<<<<<<  */
+
+@media (min-width:448px){
+    .container{
+        padding: 10px 30px;
+    }
+    
+    .lg-head{
+        font-size: 40px;
+    }
+    .m-head{
+        font-size: 28px;
+    }
+}
+
+@media (min-width:600px){
+    .container{
+        padding: 10px 50px;
+    }
+    .nav-logo{
+        font-size: 22px;
+    }
+    main{
+        justify-content: flex-start !important;
+    }
+    .main-text{
+        align-items: flex-start;
+    }
+    .lg-head{
+        font-size: 45px;
+    }
+    .m-head{
+        font-size: 30px;
+    }
+    .para{
+        text-align: left;
+        max-width: 330px;
+    }
+    footer{
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+}
+
+@media (min-width:760px){
+    main{
+        justify-content: space-between !important;
+    }
+    .main-img{
+        display: flex;
+    }
+    .main-img img{
+        width: 300px;
+    }
+    .lg-head{
+        font-size: 45px;
+    }
+    .m-head{
+        font-size: 30px;
+    }
+    .para{
+        max-width: 450px;
+    }
+}
+
+@media (min-width:960px){
+    .container{
+        padding: 10px 60px;
+    }
+    .main-img img{
+        width: 500px;
+    }
+    .lg-head{
+        font-size: 50px;
+    }
+    
