@@ -1,11 +1,6 @@
 const ham = document.querySelector('.ham');
 const menu =.querySelector('.menu');
 
-ham.addEventListener('click', function () {
-    ham.classList.toggle("active")
-    menu.classList.toggle("on")
-})
-
 // Function to handle login
 function handleLogin(event) {
     event.preventDefault(); // Prevent the default form submission behavior
