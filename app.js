@@ -1,7 +1,6 @@
 const ham = document.querySelector('.ham');
 const menu = document.querySelector('.menu');
 
-
 // Add the handleLogin function to manage the login form submission
 function handleLogin(event) {
     event.preventDefault(); // Prevent the default form submission behavior
@@ -18,3 +17,6 @@ function handleLogin(event) {
         // If the credentials do not match, display an alert
         alert('Incorrect login details');
     }
+}
+
+// Call handleLogin function when the form is submitted
