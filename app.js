@@ -1,7 +1,7 @@
 const ham = document.querySelector('.ham');
 const menu = document.querySelector('.menu');
 
-// Add the handleLogin function to manage the login form submission
+// Move the handleLogin function to manage the login form submission
 function handleLogin(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
@@ -18,9 +18,8 @@ function handleLogin(event) {
         alert('Incorrect login details');
     }
 }
+
 const loginForm = document.querySelector('#login-form');
 if (loginForm) {
     loginForm.addEventListener('submit', handleLogin);
 }
-
-// Call handleLogin function when the form is submitted
