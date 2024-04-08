@@ -24,7 +24,4 @@ function handleLogin(event) {
     }
 }
 
-// Assuming there is a form with an id of 'login-form', add an event listener for the 'submit' event
-const loginForm = document.querySelector('#login-form');
-if (loginForm) {
-    loginForm.addEventListener('submit', handleLogin);
+// Replace the existing event listener with the one provided in the plan
